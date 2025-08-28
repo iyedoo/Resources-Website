@@ -7,28 +7,28 @@ Written by *Fares Khelif*.
 
 ## Solution
 Naive Approach :
-  - For each suitcase, we compute the number of souvenirs we can fit with two nested for loops as shown in the pseudocode : 
+ - For each suitcase, we compute the number of souvenirs we can fit with two nested for loops as shown in the pseudocode :
 ```cpp
-        vector<int> ans(M)
-        for(each Suitcase(of index j) in S) {
-         int elements = 0
-         int sum = 0
-                 for (each Souvenir(of index i) in P) {
-                      if (we can fit all souvenirs of weight i in the Suitcase) {
-                           // Put all of them inside of it
-                           sum += the weight of all elements
-                           elements += P[i]
-
-                      }
-                      else {
-                           // Put as much as we can inside of it
-                           sum += the maximum weight we can fit inside of it
-                           elements += the number of elements corresponding the the maximum weight
-                      }
-                  }
-                 ans[j] = elements
-             }
+vector<int> ans(M)
+for(each Suitcase(of index j) in S) {
+    int elements = 0
+    int sum = 0
+    for (each Souvenir(of index i) in P) {
+         if (we can fit all souvenirs of weight i in the Suitcase) {
+             // Put all of them inside of it
+             sum += the weight of all elements
+             elements += P[i]
+         }
+         else {
+             // Put as much as we can inside of it
+             sum += the maximum weight we can fit inside of it
+             elements += the number of elements corresponding the the maximum weight
+        }
+     }
+     ans[j] = elements
+}
 ```
+
 
 - The main problem here is the time complexity :
       * For each Suitcase, we compute the maximum number of souvenirs we're able to put in it by iterating over all possible weights of the souvenirs
@@ -40,6 +40,8 @@ Naive Approach :
 - Time complexity: 
     * Since we don't recompute the previously computed weights, we have that i only does a single iteration over the array P which results in the fast : $O(T+M)$
     * Which is guaranteed to work since $T, M \leq 10^5$, thus we have $2 \times 10^5$ operations at most
+
+## Implementation
 
 ```cpp
 #include <bits/stdc++.h>
