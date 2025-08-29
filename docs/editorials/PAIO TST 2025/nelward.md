@@ -69,7 +69,7 @@ int main() {
 }
 ```
 
--   We can reduce the space complexity by doing the following:
+-   We can reduce the space complexity to $O(1)$ by doing the following:
 
     Set $k = 1$, let $a = p_1$.
 
