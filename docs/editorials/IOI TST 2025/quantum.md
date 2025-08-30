@@ -27,7 +27,7 @@ is minimized.
 
 
 
-\#Subtask 1: 5 points
+\##Subtask 1: 5 points
 
 
 
@@ -40,7 +40,7 @@ better.
 
 
 
-\#Subtask 2: 15 points
+\##Subtask 2: 15 points
 
 
 
@@ -56,7 +56,7 @@ Time complexity: $ O( n \\times m \\times c ) $.
 
 
 
-\#Subtask 3: 30 points
+\##Subtask 3: 30 points
 
 
 
@@ -77,7 +77,7 @@ Time complexity: $ O( c^2 \\log{c} ) $.
 
 
 
-\#Subtask 4: 100 points
+\##Subtask 4: 100 points
 
 
 
