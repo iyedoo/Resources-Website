@@ -1,20 +1,20 @@
-\## Problem Statement
+## Problem Statement
 
 
 
-\- \[English](statements/goal (en).pdf)
+- [English](statements/goal (en).pdf)
 
 
 
-\- \[French](statements/goal (fr).pdf)
+- [French](statements/goal (fr).pdf)
 
 
 
-\- \[Arabic](statements/goal (ar\_DZ).pdf)
+- [Arabic](statements/goal (ar\_DZ).pdf)
 
 
 
-\## Solution
+## Solution
 
 
 
@@ -41,7 +41,7 @@ and make a 1D line.
 
 
 
-\##Subtask 1: 15 points
+##Subtask 1: 15 points
 
 
 
@@ -57,7 +57,7 @@ Each cell is either an empty cell or an obstacle.
 
 
 
-\##Subtask 2: 20 points
+##Subtask 2: 20 points
 
 
 
@@ -72,7 +72,7 @@ Not sure what the intended solution is, but maybe try all ways using DFS
 
 
 
-\##Subtask 3: 25 points
+##Subtask 3: 25 points
 
 
 
@@ -96,7 +96,7 @@ Time complexity: $ O(n \\times m ) $.
 
 
 
-\##Subtask 4: 100 points
+##Subtask 4: 100 points
 
 
 
