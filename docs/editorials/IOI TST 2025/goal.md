@@ -1,10 +1,14 @@
-\# Goal
+\## Problem Statementù
 
-\## Problem Statement
+
 
 \- \[English](statements/goal (en).pdf)
 
+
+
 \- \[French](statements/goal (fr).pdf)
+
+
 
 \- \[Arabic](statements/goal (ar\_DZ).pdf)
 
@@ -31,7 +35,15 @@ print $ -1 $ if there is no such path.
 A general idea before we go to the solution: we can get rid of the grid
 and make a 1D line.
 
-## Subtask 1: 15 points
+
+
+------------------------------------------------------------------------
+
+
+
+\##Subtask 1: 15 points
+
+
 
 Each cell is either an empty cell or an obstacle.
 
@@ -39,12 +51,30 @@ Each cell is either an empty cell or an obstacle.
   to reach the cell $ (n,m) $.
 * Otherwise, the answer is $ n \\times m - 1 $.
 
-## Subtask 2: 20 points
+
+
+------------------------------------------------------------------------
+
+
+
+\##Subtask 2: 20 points
+
+
 
 Not sure what the intended solution is, but maybe try all ways using DFS
 (likely TLE).
 
-## Subtask 3: 25 points
+
+
+------------------------------------------------------------------------
+
+
+
+
+
+\##Subtask 3: 25 points
+
+
 
 This idea covers subtasks 2 and 3.
 
@@ -60,7 +90,15 @@ Base case: $ dp(n \\times m - 1) = 0 $.
 Answer: $ dp(0) $.  
 Time complexity: $ O(n \\times m ) $.
 
-## Subtask 4: 100 points
+
+
+------------------------------------------------------------------------
+
+
+
+\##Subtask 4: 100 points
+
+
 
 Run BFS from the start cell.
 
