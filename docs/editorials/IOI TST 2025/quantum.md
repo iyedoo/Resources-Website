@@ -1,5 +1,7 @@
 \# Quantum
 
+
+
 \## Problem Statement
 
 \- \[English](statements/quantum (en).pdf)
@@ -19,12 +21,28 @@ $C$ points. Each time we add a point, we must choose a point $(x,y)$ in
 the grid such that the sum of distances from all added points to $(x,y)$
 is minimized.
 
-## Subtask 1: 5 points
+
+
+------------------------------------------------------------------------
+
+
+
+\#Subtask 1: 5 points
+
+
 
 Grid is $ 1 \\times 2 $. Just check whether $(1,1)$ or $(1,2)$ is
 better.
 
-## Subtask 2: 15 points
+
+
+------------------------------------------------------------------------
+
+
+
+\#Subtask 2: 15 points
+
+
 
 Use a 2D array initialized to zeros.  
 For each new point $(x,y)$:
@@ -34,7 +52,13 @@ For each new point $(x,y)$:
 
 Time complexity: $ O( n \\times m \\times c ) $.
 
-## Subtask 3: 30 points
+------------------------------------------------------------------------
+
+
+
+\#Subtask 3: 30 points
+
+
 
 We use a greedy/median idea.
 
@@ -47,7 +71,15 @@ So:
 
 Time complexity: $ O( c^2 \\log{c} ) $.
 
-## Subtask 4: 100 points
+
+
+------------------------------------------------------------------------
+
+
+
+\#Subtask 4: 100 points
+
+
 
 Optimize subtask 3 with data structures:
 
