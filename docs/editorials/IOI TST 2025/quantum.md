@@ -1,7 +1,3 @@
-\# Quantum
-
-
-
 \## Problem Statement
 
 \- \[English](statements/quantum (en).pdf)
