@@ -1,6 +1,4 @@
-# Goal
-
-
+\# Goal
 
 \## Problem Statement
 

@@ -1,6 +1,4 @@
-# Quantum
-
-
+\# Quantum
 
 \## Problem Statement
 
