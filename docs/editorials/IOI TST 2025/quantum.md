@@ -1,4 +1,18 @@
-# Quantum Editorial
+# Quantum
+
+\## Problem Statement
+
+\- \[English](statements/quantum (en).pdf)
+
+\- \[French](statements/quantum (fr).pdf)
+
+\- \[Arabic](statements/quantum (ar\_DZ).pdf)
+
+
+
+\## Solution
+
+
 
 We have an $n \\times m $ grid, initially empty. We will be given
 $C$ points. Each time we add a point, we must choose a point $(x,y)$ in

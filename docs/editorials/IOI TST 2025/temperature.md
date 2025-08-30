@@ -1,4 +1,11 @@
-# Temperature Editorial
+# Temperature
+
+## Problem Statement
+- [English](statements/temperature (en).pdf)
+- [French](statements/temperature (fr).pdf)
+- [Arabic](statements/temperature (ar_DZ).pdf)
+
+## Solution
 
 We have the values of $V$ and we want to compute the values of $T$ as
 follows:

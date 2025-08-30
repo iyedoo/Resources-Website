@@ -1,4 +1,11 @@
-# Turtles Editorial
+# Turtles
+
+## Problem Statement
+- [English](statements/turtles (en).pdf)
+- [French](statements/turtles (fr).pdf)
+- [Arabic](statements/turtles (ar_DZ).pdf)
+
+## Solution
 
 We have two arrays and we want to make them equal with the minimum
 number of operations.

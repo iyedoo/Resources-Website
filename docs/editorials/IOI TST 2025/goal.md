@@ -1,4 +1,18 @@
-# Goal Editorial
+# Goal
+
+\## Problem Statement
+
+\- \[English](statements/goal (en).pdf)
+
+\- \[French](statements/goal (fr).pdf)
+
+\- \[Arabic](statements/goal (ar\_DZ).pdf)
+
+
+
+\## Solution
+
+
 
 In this problem we have to find the shortest path to get to the final
 cell.
