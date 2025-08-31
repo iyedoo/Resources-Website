@@ -14,4 +14,10 @@ This contest served as a selection test to select Algeria's team in the Internat
 
 ## Contest organizers and contributors
 
-* idk raouf you do your magic kabyle man
+- Raouf Ould Ali
+- Firas Mohammed El Amine Kiram
+- Chams Eddine Abdelali Derreche
+- Raihane Sidhoum
+- Aboubakr Bendahmane
+- Assil Abderezzak Boukhennoufa
+- Mohamed Boukra
