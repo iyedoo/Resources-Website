@@ -386,12 +386,8 @@ Proof: Two students sleep during the first minute, two during the second, and so
 
 11. Show that
 
-  
-
 $$
-
 \frac{1}{1 \cdot 2}+\frac{1}{2 \cdot 3}+\cdots+\frac{1}{n \cdot(n+1)}=\frac{n}{n+1}
-
 $$
 
   
