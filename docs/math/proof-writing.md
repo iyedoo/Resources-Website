@@ -385,12 +385,9 @@ Proof: Two students sleep during the first minute, two during the second, and so
 10. Given three lines through the origin, prove that there must be a pair of them which form an angle of less than or equal to $60^{\circ}$.
 
 11. Show that
-
 $$
 \frac{1}{1 \cdot 2}+\frac{1}{2 \cdot 3}+\cdots+\frac{1}{n \cdot(n+1)}=\frac{n}{n+1}
 $$
-
-  
 
 12. Prove that a number has an odd number of distinct factors if and only if the number is a perfect square.
 
