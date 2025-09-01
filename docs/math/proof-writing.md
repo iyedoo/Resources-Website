@@ -1,5 +1,5 @@
 # Prove it !
-Contribution by *Said Kebir*.
+Contribution by _[Said Kebir.](https://www.linkedin.com/in/said-kebir-khaled/)_
 
 To many students, mathematics is no more than finding numerical answers to problems. However, there is much more. Being able to prove your assertions is at least as important as finding the answer. Unfortunately, most schools neglect proofs or confine them to geometry classes, when proofs are important to all fields of mathematics. Moreover, proofs are usually presented in a dry, methodical way to emphasize rigor, when real mathematical proofs are written with more words than equations.
 
