@@ -7,7 +7,7 @@ Written by _Iyed Baassou_
 
 
 ## Observations:
-- The problem asks for the number of **non-decreasing** arrays of size $k$ that sums up to 
+- The problem asks for the number of **non-decreasing** arrays of size $k$ that sums up to $n$.
 - The low constraint for $n$ ($1 \le n \le 250$) hints heavily to a 3-states DP.
 ### Part I: Recursion
 This problem can be solved using recursion, since we, at each point, try different values that keep getting a sum of $n$ possible and keep the array **non-decreasing**.
