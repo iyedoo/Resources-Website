@@ -444,7 +444,7 @@ $$
 
 ### PDFs
 
-* [Book of Proofs](https://drive.google.com/file/d/1R0YeMuhXSpsgP5rsNU_2H-Vje9R75HUr/view?usp=drive_link) (en)
+* [Book of Proof](https://drive.google.com/file/d/1R0YeMuhXSpsgP5rsNU_2H-Vje9R75HUr/view?usp=drive_link) (en)
 
 * [Writing up solutions](https://drive.google.com/file/d/1YZSsq-Mckz5B1FLnKrqlydMb60aGnvDO/view) Ed Barbeau (en) ([french](https://drive.google.com/file/d/1ODy7N2T8CdeCtgx2rfIZskBUhunooo53/view))
 
