@@ -14,7 +14,7 @@ Written by _Fares Khelif_.
 - Consider a checkerboard: squares with `(i+j)` even are light, and `(i+j)` odd are dark.Since it is impossible to move from dark squares to light ones (or the opposite), any point with `(i+j)` odd is unreachable. As we start from `(0, 0)` where `(i+j)` is even, all odd-parity points are marked UNREACHABLE, as shown in the illustration :  ![](image.png)
 - So if ((n-1)+(m-1)) which simplifies to `(n+m)` is odd, then the answer would be "NO SOLUTION".
 
-### Finding the minimal number of turns when a solution exists 
+### Find the solution when it exists 
 1. The cost to reach a point `[i, j]` is the minimum over all incoming diagonals: previous cost + 0 if the tile already aligns, or +1 if it must be turned.
    So we can consider the whole circuit as a weighted graph, and the tiles as undirected edges, and the points between the squares as nodes. If the tile is ready to transfer the electricity from a point to another then the weight is 0, otherwise it's 1.
 2. We can implement Dijkstra's algorithm to find the shortest path from the source to the lamp.
@@ -89,6 +89,6 @@ int main() {
 }
 ```
 
-### Time complexity Analysis :
+### Time complexity Analysis
 - The solution is implementing Dijkstra's algorithm, whose time complexity is `O(E * log V)` 
 - Since we have `(n+1) * (m+1)` nodes, the complexity is `O((n*m) log(n*m))`, which is about `4.4 * 10^6` operations and sufficient for the constraints.
