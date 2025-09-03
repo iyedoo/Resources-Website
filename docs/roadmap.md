@@ -15,7 +15,7 @@ This roadmap is a **recommended learning path** for AOI students who want to gra
 
 ## Phase 1 – Foundations
 
-- Language basics (C++): I/O, loops, conditionals, functions  
+- [Language basics (C++): I/O, loops, conditionals, functions](fundamentals/intro-to-c%2B%2B.md)  
 - [Complexity analysis (Big-O, simple cases)](fundamentals/time-complexity.md)
 - Basic math: logic, gcd, lcm, primes, modular arithmetic, sequences  
 - Arrays & strings basics  
