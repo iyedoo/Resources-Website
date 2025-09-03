@@ -70,6 +70,7 @@ This roadmap is a **recommended learning path** for AOI students who want to gra
     * Interval DP (matrix chain, merging stones)  
     * LIS (Longest Increasing Subsequence)  
 - Counting & combinatorics basics (nCr, Pascal’s triangle, factorials mod, Binomial Theorem)  
+- Modular Inverses & Fermat’s Little Theorem
 - Game Theory Basics & Minimax  
 - Line sweeping  
 
@@ -113,10 +114,8 @@ This roadmap is a **recommended learning path** for AOI students who want to gra
 
 - Persistent Data Structures  
 - Advanced Number Theory
-    * Fermat’s Little Theorem  
     * Euler’s Totient Function  
     * Bézout’s Identity  
-    * Modular inverses  
 - Ternary search (unimodal functions)  
 - Sqrt decomposition & Mo’s algorithm  
 - Heavy-light decomposition  
