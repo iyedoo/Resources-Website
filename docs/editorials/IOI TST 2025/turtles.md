@@ -59,3 +59,68 @@ Greedy approach:
 - Else → replace larger with its GPD, increment ops.
 
 Time complexity: $ O(C \log{C} ) $, where $ C \leq 10^6 $.
+
+## Implementation
+
+```cpp
+#include <bits/stdc++.h>
+typedef long long ll;
+using namespace std;
+
+ll turtles(int n, vector<int> &a, vector<int> &b)
+{
+    vector<int> sieve(1e6 + 1, 1);
+    for (int i = 2; i <= 1e6; i++)
+    {
+        for (int j = 2; (ll)j * (ll)i <= 1e6; j++)
+        {
+            sieve[i * j] = max(sieve[i * j], i);
+        }
+    }
+
+    multiset<int> A;
+    multiset<int> B;
+    for (auto x : a)
+        A.insert(x);
+    for (auto x : b)
+        B.insert(x);
+    ll cost = 0;
+    while (A.size())
+    {
+        if (*A.rbegin() == *B.rbegin())
+        {
+            A.erase(--A.end());
+            B.erase(--B.end());
+        }
+        else if (*A.rbegin() > *B.rbegin())
+        {
+            A.insert(sieve[*A.rbegin()]);
+            A.erase(--A.end());
+            cost++;
+        }
+        else
+        {
+            B.insert(sieve[*B.rbegin()]);
+            B.erase(--B.end());
+            cost++;
+        }
+    }
+
+    return cost;
+}
+
+signed main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    vector<int> b(n);
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+    for (int i = 0; i < n; i++)
+        cin >> b[i];
+    cout << turtles(n, a, b) << '\n';
+}
+```

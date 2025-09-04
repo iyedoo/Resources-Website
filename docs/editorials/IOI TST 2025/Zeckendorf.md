@@ -74,3 +74,50 @@ Complexity:
 - Precomputation: $O(\log N_{\max})$.  
 - Each query: $O(\log N)$ since each subtraction reduces $N$ by at least half in size.  
 - Total: $O(Q \log N)$.  
+
+## Implementation
+
+```cpp
+#include <bits/stdc++.h>
+typedef long long ll;
+using namespace std;
+
+vector<ll> fibo = {1, 2};
+
+string zeckendorf(ll n)
+{
+
+   while(fibo.back() < n){
+      fibo.push_back(fibo[fibo.size()-1] + fibo[fibo.size()-2]);
+   }
+
+   ll p = fibo.size() - 1;
+   while(fibo[p] > n) p--;
+   string res = "";
+   while(p >= 0){
+      if(fibo[p] <= n){
+         res += "1";
+         n -= fibo[p];
+      }else{
+         res += "0";
+      }
+      p--;
+   }
+
+   return res;
+}
+
+signed main()
+{
+   ios::sync_with_stdio(false);
+   cin.tie(0);
+   ll q;
+   cin >> q;
+   while (q--)
+   {
+      ll n;
+      cin >> n;
+      cout << zeckendorf(n) << '\n';
+   }
+}
+```

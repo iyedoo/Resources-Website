@@ -71,3 +71,85 @@ $O(N \cdot 2^{\frac{N}{2}})$
 - **Subtask 1 (15 pts):** Elements are only $1$ or $-1$. Can brute force all subsequences.  
 - **Subtask 2 (15 pts):** $N \leq 5$. Exhaustive $2^N$ works.  
 - **Subtask 3 (30 pts):** $N \leq 18$. Direct brute force over the array is feasible.  
+
+## Implementation
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+    
+int main () {
+
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+
+  int n;
+  long long s;
+  cin >> n >> s;
+  vector<int> a((n + 1) / 2), b(n / 2);
+  for (int i = 0; i < (n + 1) / 2; ++i) {
+    cin >> a[i];
+  } 
+  for (int i = 0; i < n / 2; ++i) {
+    cin >> b[i];
+  }
+  swap(a, b);
+  vector<set<long long>> meet(4);
+  for (int mask = 0; mask < (1 << a.size()); ++mask) {
+    int con_neg = 0, first_pos = 0, first_neg = 0, cur_neg = 0;
+    long long sum = 0;
+    for (int i = 0; i < a.size(); ++i) {
+      if (mask >> i & 1) {
+        sum += a[i];
+        if (a[i] < 0) {
+          if (!first_pos) {
+            ++first_neg;
+          }
+          con_neg = max(con_neg, ++cur_neg);
+        }
+        else {
+          first_pos = 1;
+          con_neg = max(con_neg, cur_neg);
+          cur_neg = 0;
+        }
+      }
+    }
+    if (con_neg <= 3) {
+      meet[first_neg].insert(sum);
+    }
+  }
+  long long ans = 9e18;
+  for (int mask = 0; mask < (1 << b.size()); ++mask) {
+    int con_neg = 0, cur_neg = 0;
+    long long sum = 0;
+    for (int i = 0; i < b.size(); ++i) {
+      if (mask >> i & 1) {
+        sum += b[i];
+        if (b[i] < 0) {
+          con_neg = max(con_neg, ++cur_neg);
+        }
+        else {
+          con_neg = max(con_neg, cur_neg);
+          cur_neg = 0;
+        }
+      }
+    }
+    if (con_neg <= 3) {
+      for (int k = 0; k + cur_neg <= 3; ++k) {
+        auto it = meet[k].lower_bound(s - sum);
+        if (it != meet[k].end()) {
+          ans = min(ans, sum + *it);
+        }
+      }
+    }
+  }
+  if (ans == (long long)9e18) {
+    cout << "Impossible";
+  }
+  else {
+    cout << ans;
+  }
+
+  return 0;
+}
+```

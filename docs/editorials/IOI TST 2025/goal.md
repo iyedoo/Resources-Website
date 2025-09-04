@@ -108,5 +108,49 @@ Run BFS from the start cell.
 
 Time complexity: $ O(n \\times m ) $.
 
+## Implementation
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
 
+#define pb push_back
+#define ll long long
+
+void solve() {  
+    int n , m;
+    cin >> n >> m;
+    string s = {};
+    for(int i = 0 ; i < n ; i ++) {
+        string a;cin >> a; s += a;
+    }
+    vector < ll > d(n * m , 1e16);
+    queue <ll> q; d[0] = 0;
+    q.push(0);
+    while(!q.empty()) {
+        ll pos = q.front() ; q.pop();
+        if(pos == n * m - 1) return void(cout << d[pos] << '\n');
+        if(pos - 2 >= 0 && s[pos] == '#') {
+            if(d[pos - 2] > d[pos] + 1)
+                d[pos - 2] = d[pos] + 1 , q.push(pos - 2);
+            continue;
+        }
+        if(pos + 1 < n * m)
+            if(d[pos + 1] > d[pos] + 1)
+                d[pos + 1] = d[pos] + 1 , q.push(pos + 1);
+        if(s[pos] == '.') continue;
+        int nex = pos + (s[pos] - '0');
+        if(nex < n * m)
+            if(d[nex] > d[pos] + 1)
+                d[nex] = d[pos] + 1 , q.push(nex);        
+    }
+    cout << "-1";
+}
+
+
+int main() {
+    ios_base::sync_with_stdio(false); cin.tie(NULL);
+    solve(); 
+    return 0;
+}
+```
 

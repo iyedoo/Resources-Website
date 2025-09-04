@@ -52,3 +52,31 @@ For each $i$:
 At the end, the answer is in `mx`.
 
 Print `mx` and congrats, you got 100 points!
+
+## Implementation
+
+```cpp
+#include <bits/stdc++.h>
+typedef long long ll;
+using namespace std;
+signed main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    ll n;
+    cin >> n;
+    vector<ll> a(n+1, 0);
+    for(ll i = 1; i <= n; i++) cin >> a[i];
+    ll mini = 0;
+    ll current = 0;
+    ll res = 0;
+    for(auto t : a){
+        current += t;
+        res = max(res, current - mini);
+        mini = min(current, mini);
+    }
+    cout << res << '\n';
+
+}
+```

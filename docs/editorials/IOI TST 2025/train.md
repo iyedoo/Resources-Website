@@ -91,3 +91,42 @@ This algorithm runs in $O(2W \log(2W))$, which can be optimized to $O(C \log C)$
 
 - **Subtask 1:** Using backtracking, iterate through all possible distributions and find the one with minimum imbalance.  
   Complexity: $O(C W^C)$.
+
+## Implementation
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int W, C;
+    cin >> W >> C;
+    vector<long long> M;
+    M.reserve(2 * W);
+    long long sum = 0;
+    for (int i = 0; i < C; ++i) {
+        long long x;
+        cin >> x;
+        M.push_back(x);
+        sum += x;
+    }
+    // Pad with zeros to have exactly 2W elements
+    while ((int)M.size() < 2 * W) {
+        M.push_back(0);
+    }
+    sort(M.begin(), M.end());
+
+    long long A = sum / W;
+    long long imbalance = 0;
+    for (int i = 0; i < W; ++i) {
+        long long load = M[i] + M[2 * W - 1 - i];
+        imbalance += llabs(load - A);
+    }
+
+    cout << imbalance << '\n';
+    return 0;
+}
+```
