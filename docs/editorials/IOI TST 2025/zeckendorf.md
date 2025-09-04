@@ -119,6 +119,6 @@ signed main()
       cin >> n;
       cout << zeckendorf(n) << '\n';
    }
-   //rdw
+   //rdww
 }
 ```
