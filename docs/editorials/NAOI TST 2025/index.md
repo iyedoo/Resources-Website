@@ -9,6 +9,7 @@ This contest served as a selection test to select Algeria's team in the North Af
 * [Sequence](sequence.md)
 * [Rectangles](rectangles.md)
 * [DNA](dna.md)
+* [KOI](koi.md)
 * [Clocks](clocks.md)
 * [Pi](pi.md)
 * [Switch](switch.md)
