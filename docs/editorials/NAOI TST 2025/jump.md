@@ -6,6 +6,7 @@ Written by _Omar Abdelkafi Ykrelef_.
 ## Problem Statement
 
 - [English](statements/jump.pdf)
+- [Arabic](statements/jump (ar_DZ).pdf)
 
 ## Solution
 

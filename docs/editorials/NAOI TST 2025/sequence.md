@@ -2,6 +2,7 @@
 
 ## Problem Statement
 - [English](statements/sequence.pdf)
+- [Arabic](statements/sequence (ar_DZ).pdf)
 
 ## Solution
 

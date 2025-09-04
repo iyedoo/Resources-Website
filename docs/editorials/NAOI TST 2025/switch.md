@@ -6,6 +6,7 @@ Written by _Fares Khelif_.
 ## Problem Statement
 
 - [English](statements/switch.pdf)
+- [Arabic](statements/switch (ar_DZ).pdf)
 
 ## Solution
 
