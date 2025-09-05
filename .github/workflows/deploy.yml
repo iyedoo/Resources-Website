@@ -48,6 +48,13 @@ jobs:
         run: cd docs && pnpm run docs:build
       - name: Add CNAME
         run: cp CNAME docs/.vitepress/dist/CNAME
+      - name: Copy PDFs into dist
+        run: |
+          # make sure dist exists
+          mkdir -p docs/.vitepress/dist
+          # copy all PDFs preserving folder structure but stripping "docs/"
+          rsync -av --prune-empty-dirs --include '*/' --include '*.pdf' --exclude '*' docs/ docs/.vitepress/dist/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
