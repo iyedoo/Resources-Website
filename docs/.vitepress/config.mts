@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import mathjax3 from "markdown-it-mathjax3";
+import { generateSidebar } from "vitepress-sidebar";
 
 export default defineConfig({
   title: "AOI Study Hub",
