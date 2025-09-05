@@ -113,4 +113,7 @@ export default defineConfig({
     },
   },
   base: "/",
+  vite: {
+    assetsInclude: ['**/*.pdf']
+  },
 });
