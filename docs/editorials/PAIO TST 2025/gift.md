@@ -5,14 +5,14 @@ Written by *Raouf Ould Ali*.
 - [French](statements/gift.fr.pdf)
 - [Arabic](statements/gift.ar_DZ.pdf)
 
-We are given an array \$A\$ of size $N$ and an integer \$K\$.
-We start with \$B = \[0,0,\dots,0]\$ and want to transform it into \$A\$ using operations of the form:
+We are given an array $A$ of size $N$ and an integer $K$.
 
-* Choose any integer \$X > 0\$
-* Choose **exactly \$K\$ distinct positions** \$P\_1, P\_2, \dots, P\_K\$
-* Add \$X\$ to all \$B\[P\_j]\$
+We start with $B = [0,0,\ldots,0]$ and want to transform it into $A$ using operations of the form:
+* Choose any integer $X > 0$
+* Choose **exactly $K$ distinct positions** $P_1, P_2, \ldots, P_K$
+* Add $X$ to all $B[P_j]$
 
-The task is to either produce a valid sequence of operations with \$M \cdot K \leq 3 \cdot 10^6\$, or decide that it is impossible.
+The task is to either produce a valid sequence of operations with $M \cdot K \leq 3 \cdot 10^6$, or decide that it is impossible.
 
 ---
 
@@ -36,7 +36,7 @@ Each operation increases the total sum of \$B\$ by \$X \cdot K\$.
 
   be the required “height” of each group.
 
-* If \$\max(A\[i]) > \text{lim}\$, then one element cannot fit into a single group, so the answer is **impossible**.
+* If $\max(A[i]) > \text{lim}$, then one element cannot fit into a single group, so the answer is **impossible**.
 
 So feasibility requires:
 
@@ -48,41 +48,37 @@ $$
 
 ## Step 2: Grid Interpretation
 
-Visualize a grid of size \$\text{lim} \times K\$:
-
-* The grid has **height** \$\text{lim}\$ and **width** \$K\$.
-* Each column corresponds to one bundle of size \$\text{lim}\$.
-* We place each \$A\[i]\$ **vertically**:
-
+Visualize a grid of size $\text{lim} \times K$:
+* The grid has **height** $\text{lim}$ and **width** $K$.
+* Each column corresponds to one bundle of size $\text{lim}$.
+* We place each $A[i]$ **vertically**:
   * If it fits in the current column, it stays there.
   * If it overflows, it continues at the top of the next column.
 
-Since \$A\[i] \leq \text{lim}\$ for all \$i\$, a box never skips a column. At most it is split into **two consecutive columns**.
+Since $A[i] \leq \text{lim}$ for all $i$, a box never skips a column. At most it is split into **two consecutive columns**.
 
 ---
 
 ## Step 3: Sweeping for Operations
 
-Instead of outputting one operation per row (which could be up to \$\text{lim}\$ rows), we notice that:
-
+Instead of outputting one operation per row (which could be up to $\text{lim}$ rows), we notice that:
 * Each column contains **one index at a time**.
-* The index for a column only changes **when one \$A\[i]\$ ends and another begins**.
+* The index for a column only changes **when one $A[i]$ ends and another begins**.
 
 Thus, while sweeping from bottom to top:
-
-* We keep track of the current set of active indices for all \$K\$ columns.
+* We keep track of the current set of active indices for all $K$ columns.
 * We only output an operation when this set changes.
-* The operation covers all rows since the last change, so its increment is the **height difference** \$\Delta h\$.
+* The operation covers all rows since the last change, so its increment is the **height difference** $\Delta h$.
 
 ---
 
 ## Step 4: Bound on Operations
 
-* Each \$A\[i]\$ can start once in a column and possibly wrap once into the next column.
-* Therefore, each \$A\[i]\$ contributes at most **two changes**.
-* This means the total number of operations is at most \$2N\$, not \$\text{lim}\$.
+* Each $A[i]$ can start once in a column and possibly wrap once into the next column.
+* Therefore, each $A[i]$ contributes at most **two changes**.
+* This means the total number of operations is at most $2N$, not $\text{lim}$.
 
-This compression is what makes the solution efficient and ensures \$M \cdot K \leq 3 \cdot 10^6\$.
+This compression is what makes the solution efficient and ensures $M \cdot K \leq 3 \cdot 10^6$.
 
 ---
 
@@ -90,10 +86,9 @@ This compression is what makes the solution efficient and ensures \$M \cdot K \l
 
 1. **Sum condition** ensures the total number of increments matches.
 2. **Max condition** ensures no element overflows beyond a single column boundary.
-3. Because \$A\[i] \leq \text{lim}\$, there is no overlap in rows:
-
-   * Every cell of the \$\text{lim} \times K\$ grid is covered by exactly one index.
-4. The sweep construction outputs exactly the increments needed to reach \$A\$, with no waste.
+3. Because $A[i] \leq \text{lim}$, there is no overlap in rows:
+   * Every cell of the $\text{lim} \times K$ grid is covered by exactly one index.
+4. The sweep construction outputs exactly the increments needed to reach $A$, with no waste.
 
 Therefore, the algorithm always finds a valid solution if and only if it exists.
 
@@ -108,8 +103,8 @@ Input:
 2 3 3 2
 ```
 
-* \$\text{sum} = 10\$, \$\text{lim} = 5\$.
-* Fill the \$5 \times 2\$ grid column by column:
+* $\text{sum} = 10$, $\text{lim} = 5$.
+* Fill the $5 \times 2$ grid column by column:
 
 ```
 Column 1: [1, 1, 2, 2, 2]

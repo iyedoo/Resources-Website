@@ -13,23 +13,29 @@ Proof problems and solutions have a special and subtle vocabulary of their own. 
 
   
 
-- When a problem asks us to solve something about distinct objects or numbers, it means that the objects or numbers in question are all different. For example, if we are asked to solve a question involving 3 distinct integers, the numbers cannot be 2,3 , and 2 .
+- When a problem asks us to solve something about distinct objects or numbers, it means that the objects or numbers in question are all different. For example, if we are asked to solve a question involving 3 distinct integers, the numbers cannot be 2, 3, and 2.
 
 - When we say without loss of generality, we mean that we have chosen a specific case to solve, but the specific case really doesn't matter. By solving the assertion for that specific case, we prove it for all cases, as all cases are qualitatively the same; only the ordering of names or correlations is different.
 
   
 
-**_EXAMPLE_** 1 Show that if $x+y+z=7$ and $x, y$, and $z$ are distinct positive integers, then one of these numbers must be 4.
+**_EXAMPLE_** 1 Show that if $x + y + z = 7$ and $x, y$, and $z$ are distinct positive integers, then one of these numbers must be 4.
 
   
 
-Proof: Assume without loss of generality that $x<y<z$. We can do this since we know the numbers are distinct and it doesn't really matter which is which. (While $(1,2,4)$ and $(2,1,4)$ are considered different solutions, they still consist of the same three numbers.) If $x=2$, the sum $x+y+z$ is at least $2+3+4=9$, which is too big. Thus $x=1$. Similarly, if $y=3$, the sum is at least $1+3+4=8$; thus, $y=2$ and $z=4$. Hence, one of the numbers (the largest) must always be 4 . By using "without loss of generality" as we have, we have just named the largest integer $z$, the smallest $x$, and the other $y$. We can permute these labels in any way and the problem will be unchanged. Thus, all solutions can be found by permuting $(1,2,4)$.
+**Proof:** Assume without loss of generality that $x < y < z$. We can do this since we know the numbers are distinct and it doesn't really matter which is which.(While $(1,2,4)$ and $(2,1,4)$ are are considered different, they still consist of the same three numbers.) 
 
-**_EXAMPLE_** 2 Why can't we use "without loss of generality" as above on a problem involving $x+2 y+3 z=1$ ?
+If $x = 2$, the sum $x + y + z$ is at least $2 + 3 + 4 = 9$, which is too big. Thus $x = 1$. 
+
+Similarly, if $y = 3$, the sum is at least $1 + 3 + 4 = 8$; thus, $y = 2$ and $z = 4$. 
+
+Hence, one of the numbers (the largest) must always be 4. By using "without loss of generality" as we have, we have just named the largest integer $z$, the smallest $x$, and the other $y$. We can permute these labels in any way and the problem will be unchanged. Thus, all solutions can be found by permuting $(1,2,4)$.
+
+**_EXAMPLE_** 2 Why can't we use "without loss of generality" as above on a problem involving $x + 2y + 3z = 1$?
 
   
 
-Solution: The quantities in this problem are not interchangeable. Switching $x$ and $z$ yields $z+2 y+3 x=1$, which is qualitatively different from the original $x+2 y+3 z=1$. (For example, $(x, y, z)=(1,0,0)$ is a solution of one equation but not the other.) In the previous problem, switching $x$ and $z$ yields $z+y+x=7$, which is not qualitatively different from $x+y+z=7$. This is the heart of "without loss of generality"; changing the labels does not change the problem.
+**Solution:** The quantities in this problem are not interchangeable. Switching $x$ and $z$ yields $z + 2y + 3x = 1$, which is qualitatively different from the original $x + 2y + 3z = 1$. (For example, $(x, y, z) = (1,0,0)$ is a solution of one equation but not the other.) In the previous problem, switching $x$ and $z$ yields $z + y + x = 7$, which is not qualitatively different from $x + y + z = 7$. This is the heart of "without loss of generality"; changing the labels does not change the problem.
 
   
 
@@ -37,13 +43,13 @@ Solution: The quantities in this problem are not interchangeable. Switching $x$ 
 
   
 
-**_EXAMPLE_** 3 Find the maximum value of $x+y$ if $x \leq 3$ and $y \leq 5$.
+**_EXAMPLE_** 3 Find the maximum value of $x + y$ if $x \leq 3$ and $y \leq 5$.
 
-Solution: Clearly $x+y$ is always less than 9 , since $x+y \leq 3+5$. However, 9 is not the maximum, since it is never attained! The true maximum is 8 , since that is the largest value which can be attained.
+**Solution:** Clearly $x + y$ is always less than 9, since $x + y \leq 3 + 5$. However, 9 is not the maximum, since it is never attained! The true maximum is 8, since that is the largest value which can be attained.
 
   
 
-- A solution to a problem is called trivial if the numbers present in the problem have no use in determining that solution. Trivial solutions are those solutions which are blatantly obvious and have little mathematical value, so problems often ask the solver to find nontrivial solutions. For example, when solving the equation $x^{2}+y^{2}=z^{2},(0,0,0)$ is a trivial solution. Generally, any solution in which all the variables equal 0 is a trivial solution. If on a test you are unsure whether a solution you have found is trivial or not, assume it is not trivial; if you had to think at all to find the solution, it probably isn't. As another example, when asked for the nontrivial factors of an integer, we want those factors besides 1 and the number itself.
+- A solution to a problem is called trivial if the numbers present in the problem have no use in determining that solution. Trivial solutions are those solutions which are blatantly obvious and have little mathematical value, so problems often ask the solver to find nontrivial solutions. For example, when solving the equation $x^{2} + y^{2} = z^{2}$, $(0,0,0)$ is a trivial solution. Generally, any solution in which all the variables equal 0 is a trivial solution. If on a test you are unsure whether a solution you have found is trivial or not, assume it is not trivial; if you had to think at all to find the solution, it probably isn't. As another example, when asked for the nontrivial factors of an integer, we want those factors besides 1 and the number itself.
 
 - Sometimes proofs are so long that we want to break up the proof into smaller parts. After we prove each of these smaller parts, we combine them to complete the proof. In the text of a proof, these smaller parts are called lemmas. There aren't any proofs in this volume complicated enough to require lemmas, but there are some in the second volume. A proof is rigorous when the proof is complete with no unproven assumptions.
 
@@ -258,7 +264,7 @@ Consider a flock of $n+1$ pigeons. Due to space constraints, the pigeons' home o
 
   
 
-This is the simplest statement of the Pigeonhole Principle. (It is also called Dirichlet's Principle, probably because he was the first to realize that such an obvious theorem could be useful.) In fact, the Principle is highly useful in math, especially in nonobvious settings.
+This is the simplest statement of the Pigeonhole Principle. It is also called Dirichlet's Principle, probably because he was the first to realize that such an obvious theorem could be useful. In fact, the Principle is highly useful in math, especially in nonobvious settings.
 
   
 
@@ -320,7 +326,7 @@ $$
 2^{0}+2^{1}+2^{2}+\cdots+2^{n}
 $$
 
-(A closed form for a sum is one which can be immediately evaluated by plugging in the variable; there can be no summations left.) If we evaluate the sum for $n=1,2$, and 3 , we find that the answers are $2^{2}-1,2^{3}-1$, and $2^{4}-1$, respectively. From these results, we might try to deduce that a general closed form for the sum is $2^{n+1}-1$. But this is no proof. Seeing a pattern of this type is important in finding a general rule, but not in proving it.
+A closed form for a sum is one which can be immediately evaluated by plugging in the variable; there can be no summations left. If we evaluate the sum for $n=1,2$, and 3 , we find that the answers are $2^{2}-1,2^{3}-1$, and $2^{4}-1$, respectively. From these results, we might try to deduce that a general closed form for the sum is $2^{n+1}-1$. But this is no proof. Seeing a pattern of this type is important in finding a general rule, but not in proving it.
 
   
 
@@ -348,7 +354,7 @@ Since $|x|=x$, then $|x|+x=2 x$. Thus $2 x>0$, so $x>0$.
 
   
 
-Solution: This example shows that circular reasoning can be used to prove a true statement incorrectly. Our first step in the "proof" is $|x|=x$; but this is only true if $x \geq 0$ ! Thus in writing $|x|=x$, we assume that $x \geq 0$, which is what we are trying to prove. Again we are guilty of circular reasoning. (Among the problems at the end of this chapter, the reader is challenged to find a sound proof for the assertion of this problem.)
+Solution: This example shows that circular reasoning can be used to prove a true statement incorrectly. Our first step in the "proof" is $|x|=x$; but this is only true if $x \geq 0$ ! Thus in writing $|x|=x$, we assume that $x \geq 0$, which is what we are trying to prove. Again we are guilty of circular reasoning. Among the problems at the end of this chapter, the reader is challenged to find a sound proof for the assertion of this problem.
 
   
 
