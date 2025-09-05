@@ -46,6 +46,8 @@ jobs:
         run: cd docs && pnpm install
       - name: Build with VitePress
         run: cd docs && pnpm run docs:build
+      - name: Add CNAME
+        run: cp CNAME docs/.vitepress/dist/CNAME
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
