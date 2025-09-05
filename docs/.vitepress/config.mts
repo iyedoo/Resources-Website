@@ -114,6 +114,9 @@ export default defineConfig({
   },
   base: "/",
   vite: {
-    assetsInclude: ['**/*.pdf']
+    buildStart() {
+      // copy PDFs into .vitepress/public so they are served statically
+      execSync("mkdir -p .vitepress/public && rsync -av docs/editorials/ .vitepress/public/editorials/ --include='*/' --include='*.pdf' --exclude='*'", { stdio: 'inherit' })
+    }
   },
 });
