@@ -26,77 +26,11 @@ export default defineConfig({
       { text: "Editorials", link: "/editorials/" },
     ],
 
-    sidebar: [
-      {
-        text: "Learning Path",
-        items: [
-          { text: "AOI Roadmap", link: "/roadmap" },
-        ],
-      },
-      {
-        text: "Fundamentals", 
-        items: [
-          { text: "Introduction to C++", link: "/fundamentals/intro-to-c++" },
-          { text: "Time Complexity", link: "/fundamentals/time-complexity" },
-        ],
-      },
-      {
-        text: "Math",
-        items: [
-          { text: "Proof Writing", link: "/math/proof-writing" },
-        ],
-      },
-      {
-        text: "Editorials",
-        items: [
-          {
-            text: "IOI TST 2025",
-            collapsed: true,
-            items: [
-              { text: "IOI TST 2025 Editorials", link: "/editorials/IOI TST 2025/" },
-              { text: "Goal", link: "/editorials/IOI TST 2025/goal" },
-              { text: "Quantum", link: "/editorials/IOI TST 2025/quantum" },
-              { text: "Temperature", link: "/editorials/IOI TST 2025/temperature" },
-              { text: "Turtles", link: "/editorials/IOI TST 2025/turtles" },
-            ],
-          },
-          {
-            text: "Implementation Gauntlets",
-            collapsed: true,
-            items: [
-              { text: "The Trial of Order and Chaos", link: "/editorials/Implementation Gauntlets/chaos" },
-            ],
-          },
-          {
-            text: "NAOI TST 2025",
-            collapsed: true,
-            items: [
-              { text: "Clocks", link: "/editorials/NAOI TST 2025/clocks" },
-              { text: "DNA", link: "/editorials/NAOI TST 2025/dna" },
-              { text: "Jump", link: "/editorials/NAOI TST 2025/jump" },
-              { text: "Pi", link: "/editorials/NAOI TST 2025/pi" },
-              { text: "Rectangles", link: "/editorials/NAOI TST 2025/rectangles" },
-              { text: "Switch", link: "/editorials/NAOI TST 2025/switch" },
-            ],
-          },
-          {
-            text: "PAIO TST 2025",
-            collapsed: true,
-            items: [
-              { text: "PAIO TST 2025 Editorials", link: "/editorials/PAIO TST 2025/" },
-              { text: "Alpacas", link: "/editorials/PAIO TST 2025/alpacas" },
-              { text: "Carnival", link: "/editorials/PAIO TST 2025/carnival" },
-              { text: "Cooling", link: "/editorials/PAIO TST 2025/cooling" },
-              { text: "Garden", link: "/editorials/PAIO TST 2025/garden" },
-              { text: "Gift", link: "/editorials/PAIO TST 2025/gift" },
-              { text: "Nelward", link: "/editorials/PAIO TST 2025/nelward" },
-              { text: "Plane", link: "/editorials/PAIO TST 2025/plane" },
-              { text: "Purchase", link: "/editorials/PAIO TST 2025/purchase" },
-            ],
-          },
-        ],
-      },
-    ],
+    sidebar: generateSidebar({
+      documentRootPath: "docs",  // your docs folder
+      basePath: "/",             // site base
+      collapsed: true,           // collapse groups
+    }),
 
     socialLinks: [
       { icon: "github", link: "https://github.com/algerianoi" },
