@@ -28,7 +28,7 @@ export default defineConfig({
     ],
 
     sidebar: generateSidebar({
-      documentRootPath: "docs",  // your docs folder
+      documentRootPath: "",  // your docs folder
       basePath: "/",             // site base
       collapsed: true,           // collapse groups
     }),
