@@ -186,3 +186,11 @@ a:hover {
     height: 1px !important;
     background-color: var(--vp-code-tab-divider) !important;
 }
+
+.dark a {
+    color: #6284f2
+}
+
+.dark a:hover {
+    color: #829fff
+}
