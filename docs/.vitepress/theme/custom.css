@@ -1,6 +1,6 @@
 /* misery */
 :root {
-  --vp-c-brand-1: #1a5b91;
+  --vp-c-brand-1: ##6284f2;
   --vp-c-brand-2: #0f4a7a;
   --vp-c-brand-3: #0a3d5c;
   
@@ -26,9 +26,9 @@
 }
 
 .dark {
-  --vp-c-brand-1: #1e40af;
-  --vp-c-brand-2: #1d4ed8;
-  --vp-c-brand-3: #1e3a8a;
+  --vp-c-brand-1: #6284f2;
+  --vp-c-brand-2: #6284f2;
+  --vp-c-brand-3: #6284f2;
   
   --vp-c-bg: #0f172a;
   --vp-c-bg-soft: #1e293b;
