@@ -1,0 +1,188 @@
+/* misery */
+:root {
+  --vp-c-brand-1: #1a5b91;
+  --vp-c-brand-2: #0f4a7a;
+  --vp-c-brand-3: #0a3d5c;
+  
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-soft: #f8fafc;
+  --vp-c-bg-mute: #f1f5f9;
+  
+  --vp-c-text-1: #0f172a;
+  --vp-c-text-2: #475569;
+  --vp-c-text-3: #64748b;
+  
+  --vp-c-border: #e2e8f0;
+  --vp-c-border-soft: #f1f5f9;
+  
+  --vp-c-code-bg: #f8fafc;
+  --vp-c-code-text: #0f172a;
+  
+  --vp-c-sidebar-bg: #ffffff;
+  --vp-c-sidebar-text: #475569;
+  
+  --paiogradient-start: #1a5b91;
+  --paiogradient-end: #0f4a7a;
+}
+
+.dark {
+  --vp-c-brand-1: #1e40af;
+  --vp-c-brand-2: #1d4ed8;
+  --vp-c-brand-3: #1e3a8a;
+  
+  --vp-c-bg: #0f172a;
+  --vp-c-bg-soft: #1e293b;
+  --vp-c-bg-mute: #334155;
+  
+  --vp-c-text-1: #f8fafc;
+  --vp-c-text-2: #cbd5e1;
+  --vp-c-text-3: #94a3b8;
+  
+  --vp-c-border: #334155;
+  --vp-c-border-soft: #475569;
+  
+  --vp-c-code-bg: #1e293b;
+  --vp-c-code-text: #f8fafc;
+  
+  --vp-c-sidebar-bg: #0f172a;
+  --vp-c-sidebar-text: #cbd5e1;
+}
+
+:root {
+  --vp-c-accent-1: #10b981;
+  --vp-c-accent-2: #f59e0b;
+  --vp-c-accent-3: #ef4444;
+}
+
+.dark {
+  --vp-c-accent-1: #34d399;
+  --vp-c-accent-2: #fbbf24;
+  --vp-c-accent-3: #f87171;
+}
+
+/* logo */
+.VPNav .VPNavBar .logo {
+  height: 56px !important;
+  width: auto !important;
+}
+
+.VPNav .VPNavBar .logo img {
+  height: 56px !important;
+  width: auto !important;
+}
+
+
+.paio-gradient {
+  background: linear-gradient(135deg, var(--paiogradient-start), var(--paiogradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.VPHero .name {
+  color: #1a5b91 !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  background-clip: unset !important;
+}
+
+.VPButton.brand {
+  background: #1a5b91;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.VPButton.brand:hover {
+  background: #0f4a7a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(26, 91, 145, 0.3);
+}
+
+.VPSidebarItem.is-active > .item > .text {
+  color: #1a5b91;
+  font-weight: 600;
+}
+
+
+a {
+  color: #1a5b91;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0f4a7a;
+}
+
+.dark .VPHero .name {
+  color: #1e40af;
+}
+
+.dark .VPButton.brand {
+  background: #1e40af;
+}
+
+.dark .VPButton.brand:hover {
+  background: #1e3a8a;
+}
+
+.dark a {
+  color: #1e40af;
+}
+
+.dark a:hover {
+  color: #1d4ed8;
+}
+
+/* Latex */
+.MathJax {
+  font-size: 1.1em;
+}
+
+.MathJax_Display {
+  margin: 1em 0;
+  text-align: center;
+}
+
+/* Why me */
+.plugin-tabs--content div[class*="pad-content"] {
+    padding: 16px !important;
+}
+
+.plugin-tabs--content > div[class*="pad-content"] > :first-child {
+    margin-top: 0px !important;
+}
+
+.plugin-tabs--content
+    > :first-child
+    ~ div[class*="pad-content"]
+    > :first-child {
+    margin-top: -16px !important;
+}
+
+.plugin-tabs--content .pad-content > :last-child {
+    margin-bottom: 0px !important;
+}
+
+.plugin-tabs--content .pad-content:has(+ *) > :last-child {
+    margin-bottom: -16px !important;
+}
+
+.plugin-tabs--content:has(> div[class*="language-"]:first-child) {
+    padding: 0px !important;
+}
+
+.plugin-tabs--content:has(> div[class*="language-"]:first-child) {
+    background-color: var(--vp-code-block-bg) !important;
+    border-radius: 0px 0px 8px 8px !important;
+}
+
+.plugin-tabs--tab-list {
+    background-color: var(--vp-code-tab-bg) !important;
+    border-radius: 8px 8px 0px 0px !important;
+}
+
+.plugin-tabs--tab-list::after {
+    height: 1px !important;
+    background-color: var(--vp-code-tab-divider) !important;
+}
