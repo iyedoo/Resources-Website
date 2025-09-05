@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      -vitepress
     paths:
       - docs/**
   # Also allows me to rebuild manually from the actions tab
