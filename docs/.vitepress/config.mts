@@ -33,6 +33,7 @@ export default defineConfig({
       capitalizeEachWords: true,
       useFolderLinkFromIndexFile: true,
       useFolderTitleFromIndexFile: true,
+      useTitleFromFileHeading: true,
       basePath: "/",             // site base
       collapsed: true,           // collapse groups
     }),
