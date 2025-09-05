@@ -29,6 +29,7 @@ export default defineConfig({
 
     sidebar: generateSidebar({
       documentRootPath: "",  // your docs folder
+      useTitleFromFrontmatter: true,
       basePath: "/",             // site base
       collapsed: true,           // collapse groups
     }),
