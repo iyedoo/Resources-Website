@@ -9,6 +9,10 @@ This contest served as a selection test to select Algeria's team in the Internat
 * [Turtles](turtles.md)
 * [Quantum](quantum.md)
 * [Goal](goal.md)
+* [Xoracle](xoracle.md)
+* [Train](train.md)
+* [Sequence](sequence.md)
+* [Zeckendorf](zeckendorf.md)
 
 
 

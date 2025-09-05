@@ -5,6 +5,7 @@ Written by _Omar Abdelkafi Ykrelef_.
 ## Problem Statement
 
 - [English](statements/clocks.pdf)
+- [Arabic](statements/clocks (ar_DZ).pdf)
 
 ## Solution
 

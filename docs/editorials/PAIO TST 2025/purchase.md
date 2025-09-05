@@ -32,14 +32,14 @@ for(each Suitcase(of index j) in S) {
 
 - The main problem here is the time complexity :
       * For each Suitcase, we compute the maximum number of souvenirs we're able to put in it by iterating over all possible weights of the souvenirs
-      * Since we have T Suitcases and M possible weights of the Souvenirs, this will result in a TC of $O(T \times M)$ which is insufficient with such constraints($10^{5} \times 10^{5} = 10^{10}$ (Too large!))
+      * Since we have T Suitcases and M possible weights of the Souvenirs, this will result in a TC of $O(T \times M)$ which is insufficient with such constraints($10^5 \times 10^5 = 10^{10}$ (Too large!))
 - Key Optimization :
     * Instead of reiterating over all possible weights in P for every Suitcase, we can see that if we sort the array S while keeping the index of each suitcase for the output, we won't have to recompute computed suitecases, since we always start from the smallest weight, the large suitcase is going to fit what the small suitcase fitted, and it will still have the capacity to fit other souvenirs, and that's only what the optimized algorithm is going to compute
     * As you can see the fully working code I wrote, which guarantees a 100%
 
 - Time complexity: 
     * Since we don't recompute the previously computed weights, we have that i only does a single iteration over the array P which results in the fast : $O(T+M)$
-    * Which is guaranteed to work since $T, M \leq 10^{5}$, thus we have $2 \times 10^{5}$ operations at most
+    * Which is guaranteed to work since $T, M \leq 10^5$, thus we have $2 \times 10^5$ operations at most
 
 ## Implementation
 
