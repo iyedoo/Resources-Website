@@ -32,6 +32,11 @@ export default defineConfig({
       useTitleFromFrontmatter: true,
       basePath: "/",             // site base
       collapsed: true,           // collapse groups
+      transformPageName: (name) => {
+        return name
+          .replace(/-/g, " ")   // replace dashes with spaces
+          .replace(/\b\w/g, (l) => l.toUpperCase()); // capitalize words
+      },
     }),
 
     socialLinks: [
