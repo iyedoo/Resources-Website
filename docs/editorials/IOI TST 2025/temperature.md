@@ -1,9 +1,9 @@
 # Temperature
 
 ## Problem Statement
-- [English](statements/temperature (en).pdf)
-- [French](statements/temperature (fr).pdf)
-- [Arabic](statements/temperature (ar_DZ).pdf)
+- [English](statements/temperature%20(en).pdf)
+- [French](statements/temperature%20(fr).pdf)
+- [Arabic](statements/temperature%20(ar_DZ).pdf)
 
 ## Solution
 

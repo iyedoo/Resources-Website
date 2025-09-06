@@ -1,9 +1,9 @@
 # Sequence
 
 ## Problem Statement
-- [English](statements/sequence (en).pdf)  
-- [French](statements/sequence (fr).pdf)  
-- [Arabic](statements/sequence (ar_DZ).pdf)  
+- [English](statements/sequence%20(en).pdf)  
+- [French](statements/sequence%20(fr).pdf)  
+- [Arabic](statements/sequence%20(ar_DZ).pdf)  
 
 ---
 

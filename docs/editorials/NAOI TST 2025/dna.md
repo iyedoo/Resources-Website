@@ -6,7 +6,7 @@ Written by _Kimouche Taki_
 
 ## Problem statement :
 - [English](statements/dna.pdf)
-- [Arabic](statements/dna (ar_DZ).pdf)
+- [Arabic](statements/dna%20(ar_DZ).pdf)
 
 ## Solution :
 

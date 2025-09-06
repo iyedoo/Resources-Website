@@ -1,9 +1,9 @@
 # Xoracle
 
 ## Problem Statement
-- [English](statements/xoracle (en).pdf)
-- [French](statements/xoracle (fr).pdf)
-- [Arabic](statements/xoracle (ar_DZ).pdf)
+- [English](statements/xoracle%20(en).pdf)
+- [French](statements/xoracle%20(fr).pdf)
+- [Arabic](statements/xoracle%20(ar_DZ).pdf)
 
 ---
 

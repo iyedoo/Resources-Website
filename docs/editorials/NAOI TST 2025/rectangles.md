@@ -6,7 +6,7 @@ Written by _Raouf Ould Ali_.
 ## Problem Statement
 
 - [English](statements/rectangles.pdf)
-- [Arabic](statements/rectangles (ar_DZ).pdf)
+- [Arabic](statements/rectangles%20(ar_DZ).pdf)
 
 ## Solution
 

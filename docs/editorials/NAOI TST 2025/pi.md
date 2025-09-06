@@ -4,7 +4,7 @@ Written by _Iyed Baassou_
 ## Problem Statement
 
 - [English](statements/pi.pdf)
-- [Arabic](statements/pi (ar_DZ).pdf)
+- [Arabic](statements/pi%20(ar_DZ).pdf)
 
 
 ## Observations:

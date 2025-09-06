@@ -1,10 +1,10 @@
 ## Problem Statement
 
-- [English](statements/quantum (en).pdf)
+- [English](statements/quantum%20(en).pdf)
 
-- [French](statements/quantum (fr).pdf)
+- [French](statements/quantum%20(fr).pdf)
 
-- [Arabic](statements/quantum (ar\_DZ).pdf)
+- [Arabic](statements/quantum%20(ar\_DZ).pdf)
 
 
 ## Solution

@@ -1,9 +1,9 @@
 # Zeckendorf
 
 ## Problem Statement
-- [English](statements/zeckendorf (en).pdf)
-- [French](statements/zeckendorf (fr).pdf)
-- [Arabic](statements/zeckendorf (ar_DZ).pdf)
+- [English](statements/zeckendorf%20(en).pdf)
+- [French](statements/zeckendorf%20(fr).pdf)
+- [Arabic](statements/zeckendorf%20(ar_DZ).pdf)
 
 ---
 let $Z(i)$ be the zeckendorf representation of $i>0$ and $F_0 = 1$

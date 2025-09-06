@@ -2,15 +2,15 @@
 
 
 
-- [English](statements/goal (en).pdf)
+- [English](statements/goal%20(en).pdf)
 
 
 
-- [French](statements/goal (fr).pdf)
+- [French](statements/goal%20(fr).pdf)
 
 
 
-- [Arabic](statements/goal (ar\_DZ).pdf)
+- [Arabic](statements/goal%20(ar\_DZ).pdf)
 
 
 

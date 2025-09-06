@@ -1,9 +1,9 @@
 # Turtles
 
 ## Problem Statement
-- [English](statements/turtles (en).pdf)
-- [French](statements/turtles (fr).pdf)
-- [Arabic](statements/turtles (ar_DZ).pdf)
+- [English](statements/turtles%20(en).pdf)
+- [French](statements/turtles%20(fr).pdf)
+- [Arabic](statements/turtles%20(ar_DZ).pdf)
 
 ## Solution
 

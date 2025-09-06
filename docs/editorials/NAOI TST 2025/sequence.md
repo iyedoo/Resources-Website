@@ -2,7 +2,7 @@
 
 ## Problem Statement
 - [English](statements/sequence.pdf)
-- [Arabic](statements/sequence (ar_DZ).pdf)
+- [Arabic](statements/sequence%20(ar_DZ).pdf)
 
 ## Solution
 

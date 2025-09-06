@@ -1,9 +1,9 @@
 # Train
 
 ## Problem Statement
-- [English](statements/train (en).pdf)
-- [French](statements/train (fr).pdf)
-- [Arabic](statements/train (ar_DZ).pdf)
+- [English](statements/train%20(en).pdf)
+- [French](statements/train%20(fr).pdf)
+- [Arabic](statements/train%20(ar_DZ).pdf)
 
 ---
 
