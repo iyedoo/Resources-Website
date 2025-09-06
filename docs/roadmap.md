@@ -20,7 +20,7 @@ This roadmap is a **recommended learning path** for AOI students who want to gra
 - Basic math: logic, gcd, lcm, primes, modular arithmetic, sequences  
 - Arrays & strings basics  
 - Problem-solving mindset (reading problems, testing with examples)  
-- Debugging practices  
+- [Debugging practices](fundamentals/debugging.md)  
 - [Introduction to proof writing in mathematics](math/proof-writing.md)  
 
 ---
