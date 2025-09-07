@@ -18,8 +18,9 @@ our final answer will be $dp_{n - 1}$.
 
 Now for the construction (i.e. finding the optimal way Omar should use the masks or perfume), this might seem tricky at first, but it could be done with just slight additions to our approach. 
 
-We can treat our dp states as a DAG (directed acyclic graph), where each state is a node, and the parent for a state is the state that leads to it (i.e. choosing the mask or perfume); this way, we can start at state $n - 1$ and continue traversing its parents until its first ancestor (state 0) \\
-total time complexity: $O(n\log n)$
+We can treat our dp states as a DAG (directed acyclic graph), where each state is a node, and the parent for a state is the state that leads to it (i.e. choosing the mask or perfume); this way, we can start at state $n - 1$ and continue traversing its parents until its first ancestor (state 0).
+
+Total time complexity: $O(n\log n)$.
 
 # Implementation
 
