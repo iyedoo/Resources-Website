@@ -26,7 +26,7 @@ is minimized.
 
 
 
-Grid is $ 1 \\times 2 $. Just check whether $(1,1)$ or $(1,2)$ is
+Grid is $1 \times 2$. Just check whether $(1,1)$ or $(1,2)$ is
 better.
 
 
@@ -45,7 +45,7 @@ For each new point $(x,y)$:
 * Add distance to all cells.
 * Take minimum.
 
-Time complexity: $ O( n \\times m \\times c ) $.
+Time complexity: $O(n \times m \times c)$.
 
 ------------------------------------------------------------------------
 
@@ -57,14 +57,13 @@ Time complexity: $ O( n \\times m \\times c ) $.
 
 We use a greedy/median idea.
 
-For 1D: given $ X\_1, X\_2, \\dots $, to minimize $ \\sum|X\_i - v| $,
-pick median.  
-So:
+For 1D: given $X_1, X_2, \ldots$, to minimize $\sum|X_i - v|$, pick median.
 
-* Maintain arrays of $ x $'s and $ y $'s separately.
+So:
+* Maintain arrays of $x$'s and $y$'s separately.
 * Each time, sort them, pick median, compute sum of distances.
 
-Time complexity: $ O( c^2 \\log{c} ) $.
+Time complexity: $O(c^2 \log c)$.
 
 
 
@@ -76,12 +75,10 @@ Time complexity: $ O( c^2 \\log{c} ) $.
 
 
 Optimize subtask 3 with data structures:
-
-* Ordered set → find median in $ O( \\log{c} ) $.
+* Ordered set → find median in $O(\log c)$.
 * Lazy segment tree → range update/query for sums.
 
-Final complexity: $ O(c \\times ( \\log{c} + \\log{n} +
-\\log{m} )  ) $ .
+Final complexity: $O(c \times (\log c + \log n + \log m))$.
 
 ## Implementation
 

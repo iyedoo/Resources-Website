@@ -25,11 +25,11 @@ All numbers are prime or $1$.
 
 Example:
 
-- $ A $ = `1 1 2 3 5 5`
+- $A$ = `1 1 2 3 5 5`
 
-- $ B $ = `1 2 2 5 7 11`
+- $B$ = `1 2 2 5 7 11`
 
-- Answer = $ | occA[p] - occB[p]| $ summed over primes.
+- Answer = $|occA[p] - occB[p]|$ summed over primes.
 
 ## Subtask 3: 10 points
 
@@ -58,7 +58,7 @@ Greedy approach:
 
 - Else → replace larger with its GPD, increment ops.
 
-Time complexity: $ O(C \log{C} ) $, where $ C \leq 10^6 $.
+Time complexity: $O(C \log C)$, where $C \leq 10^6$.
 
 ## Implementation
 
