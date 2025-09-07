@@ -1,3 +1,5 @@
+# Cooling
+
 Written by *Iyed Baassou*.
  
 ## Problem Statement

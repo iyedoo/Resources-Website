@@ -1,3 +1,5 @@
+# Purchase
+
 Written by *Fares Khelif*.
  
 ## Problem Statement
