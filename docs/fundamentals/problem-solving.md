@@ -185,7 +185,7 @@ Start with input/output scaffolding:
 3. **Stack overflow**: Check recursion depth
 4. **Division by zero**: Verify denominators
 
-More advice on debugging is available in the [Debugging Practices](fundamentals/debugging.md) guide.
+More advice on debugging is available in the [Debugging Practices](debugging.md) guide.
 
 ---
 
