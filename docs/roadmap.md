@@ -17,7 +17,7 @@ This roadmap is a **recommended learning path** for AOI students who want to gra
 
 - [Language basics (C++): I/O, loops, conditionals, functions](fundamentals/intro-to-c%2B%2B.md)  
 - [Complexity analysis (Big-O, simple cases)](fundamentals/time-complexity.md)
-- Basic math: [logic](math/proof-writing.md), [gcd, lcm, primes, modular arithmetic](math/nt-basics.md), sequences  
+- Basic math: [logic](math/proof-writing.md), [gcd, lcm, primes, modular arithmetic](math/nt-basics.md), [sequences](math/sequences.md)  
 - [Arrays & strings basics](fundamentals/strings-arrays.md)  
 - Problem-solving mindset (reading problems, testing with examples)  
 - [Debugging practices](fundamentals/debugging.md)  
