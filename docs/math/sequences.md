@@ -62,5 +62,7 @@ It’s not about memorizing math formulas — it’s about **seeing the pattern 
 * [Wikipedia – Arithmetico–Geometric Sequence](https://en.wikipedia.org/wiki/Arithmetico-geometric_sequence)
 * [Arithmeric Sequences - YouTube](https://www.youtube.com/watch?v=XZJdyPkCxuE)
 * [Geometric Sequences - YouTube](https://www.youtube.com/watch?v=zRKZ0-kOUZM)
+* [Everything About Sequences for BAC (AR) - YouTube](https://www.youtube.com/watch?v=MDHRuO7Vgjc)
+* [Sequences Playlist for BAC (AR) - YouTube](https://www.youtube.com/watch?v=OrYf2n8G7D4&list=PLDx_F4dKxvNLkyydAhIba3-hbrKHT8vRV)
 * [ALMO 2025 Handout – Sequences (Olympiad techniques)](Sequences_Handout.pdf)
 
