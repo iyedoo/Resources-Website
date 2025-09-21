@@ -1,12 +1,12 @@
-# Unfair genie
+# Genie
 Written by Fatima Amrat 
 
 
 ## Problem Statement:
--[English](https://cms.algerianoi.com/Incarnadine20Sep2025/tasks/genie/statements/en/genie.en.pdf)
--[French](https://cms.algerianoi.com/Incarnadine20Sep2025/tasks/genie/statements/fr/genie.fr.pdf)
--[Arabe](https://cms.algerianoi.com/Incarnadine20Sep2025/tasks/genie/statements/ar/genie.ar.pdf)
--[Arabe (Algérie)](https://cms.algerianoi.com/Incarnadine20Sep2025/tasks/genie/statements/ar_DZ/genie.ar_DZ.pdf)
+- [English](https://cms.algerianoi.com/Incarnadine20Sep2025/tasks/genie/statements/en/genie.en.pdf)
+- [French](https://cms.algerianoi.com/Incarnadine20Sep2025/tasks/genie/statements/fr/genie.fr.pdf)
+- [Arabic](https://cms.algerianoi.com/Incarnadine20Sep2025/tasks/genie/statements/ar/genie.ar.pdf)
+- [Arabic (Algeria)](https://cms.algerianoi.com/Incarnadine20Sep2025/tasks/genie/statements/ar_DZ/genie.ar_DZ.pdf)
 
 
 ## Key Idea:
