@@ -4,7 +4,7 @@ This directory contains editorials for the problems from the Incarnadine Trainin
 
 ## Problems
 
-* [TOwers](towers.md)
+* [Towers](towers.md)
 
 
 
