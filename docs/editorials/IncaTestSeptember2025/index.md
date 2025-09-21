@@ -5,6 +5,7 @@ This directory contains editorials for the problems from the Incarnadine Trainin
 ## Problems
 
 * [Towers](towers.md)
+* [Job](job.md)
 
 
 
