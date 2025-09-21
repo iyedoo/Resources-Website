@@ -100,5 +100,4 @@ int main() {
 - Prefix sums allow each transition to be computed in O(1).
 - We have **`N` elements** and **`C` inversions**, so :
 
- Overall : 
-    $$O(N*C)$$
+ Overall :  **O(N·C)**
