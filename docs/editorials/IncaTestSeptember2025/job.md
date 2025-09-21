@@ -1,4 +1,4 @@
-# Job Problem  Editorial
+# Job 
 <em>writen by Mohamed Boukerche</em>
 
 ## Problem Statement
