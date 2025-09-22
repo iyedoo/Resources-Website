@@ -1,4 +1,4 @@
-# Incarnadine Training September 2025
+# Summer Camp 2024 Test
 
 This directory contains editorials for the problems from AOI Summer Camp 2024 Test.
 
@@ -11,11 +11,9 @@ This directory contains editorials for the problems from AOI Summer Camp 2024 Te
 <!-- * [Magic letters](letters.md) -->
 <!-- * [Catch Time](catch.md) -->
 
-
-
 ## Contest organizers and contributors
 
 - Raouf Ould Ali
 - Abdelmalek Khelifi
 - Assil Boukhennoufa
-- Hachem Drici
+- Mohammed Hachem Drici

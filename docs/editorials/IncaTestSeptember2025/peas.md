@@ -28,7 +28,7 @@ For the case of $max_u \geq \frac{z_m}{m}$, the proof directly follows from the 
 
 By the AM-GM inequality, we have the following:
 
-$\sum_{i = 1}^{n} a_i \leq \sqrt[n]{\prod_{i = 1}^{n}a_i}$
+$\sum_{i = 1}^{n} a_i \leq n\cdot\sqrt[n]{\prod_{i = 1}^{n}a_i}$
 
 Dividing both sides by $n$ and raising to the power of $n$, we get the maximum value for the product, which holds if $a_1 = a_2 = … = a_n = \frac{z_m}{m}$.
 
@@ -73,7 +73,10 @@ vector<ll> a;
 
 void dfs(ll u) {
     // leaf node
-    if (ch[u].size() == 0) return mx[u] = a[1];
+    if (ch[u].size() == 0) {
+        mx[u] = a[1];
+        return;
+    }
     
     // explore children first, if there are any
     for (ll v : ch[u]) dfs(v);
@@ -88,7 +91,9 @@ void dfs(ll u) {
         ll s = 0;
         for (ll v : ch[u]) s += mx[v];
         
-        return mx[u] = min(s, max_cap);
+        mx[u] = min(s, max_cap);
+
+        return;
     }
 
     // the pod is blue
