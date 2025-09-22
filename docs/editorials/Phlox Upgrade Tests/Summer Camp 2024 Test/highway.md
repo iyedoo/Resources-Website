@@ -6,6 +6,7 @@
 
 > [English](statements/task1-eng.pdf)  
 > [Arabic](statements/task1-ara.pdf)  
+> [French](statements/task1-fre.pdf)  
 
 ## Solution
 
