@@ -1,4 +1,3 @@
----
 title: Dox Taurus Cows
 created: '2025-05-07T12:52:26.448Z'
 modified: '2025-09-23T15:06:55.172Z'
@@ -6,7 +5,7 @@ modified: '2025-09-23T15:06:55.172Z'
 
 # Dox Taurus Cows
 
-By Sultan Alaiban
+*By Sultan Alaiban*
 
 ## 1. Subtask 3 ($N,M ≤ 50, Q ≤ 20,000$)
 
@@ -37,3 +36,61 @@ Since $N$ can be halved at most $\log_2{N}$ times before reaching $0$, and $M$ c
 Updating and querying are similar to Subtask 4's solution, with an additional $\log N + \log M$ factor for locating the cell.
 
 Total complexity is $\mathcal{O}(Q \log Q (\log N + \log M))$.
+
+## Implemtation
+
+```cpp
+#include <map>
+#include <iostream>
+#include <set>
+
+using namespace std;
+#define int long long
+#define x first
+#define y second
+
+map<int, int> cnt;
+multiset<int> cnts;
+
+void find(int n, int m, int i, int j, int u, int index = 0) {
+    if (n == 0 || m == 0) return;
+    if (n > m) {
+        int bottom_right_i = n - n%m;
+        int bottom_right_j = m;
+        if (0 <= i && i < bottom_right_i && 0 <= j && j < bottom_right_j) {
+            index += i/m;
+            cnts.extract(cnt[index]);
+            cnts.insert(cnt[index] += u);
+            return;
+        }
+        return find(n % m, m, i - (n/m)*m, j, u, index + n);
+    } else {
+        int bottom_right_i = n;
+        int bottom_right_j = m - m%n;
+        if (0 <= i && i < bottom_right_i && 0 <= j && j < bottom_right_j) {
+            index += j/n;
+            cnts.extract(cnt[index]);
+            cnts.insert(cnt[index] += u);
+            return;
+        }
+        return find(n, m % n, i, j - (m/n)*n, u, index + m);
+    }
+}
+
+signed main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr), cout.tie(nullptr);
+
+    int n,m,q; cin >> n >> m >> q;
+    while (q--) {
+        string s; cin >> s;
+        if (s == "c") {
+            cout << (cnts.empty() ? 0 : *cnts.rbegin()) << "\n";
+        } else {
+            int X,Y; cin >> X >> Y;
+            int val = s == "a" ? +1 : -1;
+            find(n, m, X, Y, val);
+        }
+    }
+}
+```
