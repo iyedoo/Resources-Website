@@ -4,5 +4,6 @@ This directory contains editorials for the problems from the first edition of th
 
 ## Problems
 
+* [Dox Taurus Cows](cows.md)
 * [The Dripping Tap](dripping.md)
 
