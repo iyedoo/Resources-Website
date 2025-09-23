@@ -1,7 +1,3 @@
-title: Dox Taurus Cows
-created: '2025-05-07T12:52:26.448Z'
-modified: '2025-09-23T15:06:55.172Z'
----
 
 # Dox Taurus Cows
 
@@ -27,9 +23,9 @@ To solve the problem, we will generalize the previous solution. If $N > M$, then
 
 For each group of squares, we can maintain the number of cows in each square like in Subtask 4. We will now show the number of groups we will generate in the end is $\mathcal{O}(log N + log M)$.
 
-Assume $a > b$. Then, $a \bmod b ≤ a - b$. Moreover, $a \bmod b < b$ by definition. This means: $$a \bmod b < \min(b, a - b + 1)$$
+Assume $a > b$. Then, $a \bmod b ≤ a - b$. Moreover, $a \bmod b < b$ by definition. This means: $a \bmod b < \min(b, a - b + 1)$
 
-By pigeonhole principle, $\min(b, a-b+1) ≤ \frac{a+1}{2}$, therefore: $$a \bmod b < \frac{a+1}{2}$$
+By pigeonhole principle, $\min(b, a-b+1) ≤ \frac{a+1}{2}$, therefore: $a \bmod b < \frac{a+1}{2}$
 
 Since $N$ can be halved at most $\log_2{N}$ times before reaching $0$, and $M$ can be halved at most $\log_2{M}$ times before reaching $0$, there at most $\log_2{N} + \log_2{M}$ groups of squares.
 
