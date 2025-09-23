@@ -33,7 +33,7 @@ Updating and querying are similar to Subtask 4's solution, with an additional $\
 
 Total complexity is $\mathcal{O}(Q \log Q (\log N + \log M))$.
 
-## Implemtation
+## Implementation
 
 ```cpp
 #include <map>
