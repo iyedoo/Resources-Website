@@ -30,7 +30,7 @@ By the AM-GM inequality, we have the following:
 
 $\sum_{i = 1}^{n} a_i \leq n\cdot\sqrt[n]{\prod_{i = 1}^{n}a_i}$
 
-Dividing both sides by $n$ and raising to the power of $n$, we get the maximum value for the product, which holds if $a_1 = a_2 = … = a_n = \frac{z_m}{m}$.
+Dividing both sides by $n$ and raising to the power of $n$, we get the maximum value for the product, which holds iff $a_1 = a_2 = … = a_n = \frac{z_m}{m}$.
 
 The latter case was not necessary to prove, as we will prove the more general case, but I liked to introduce it in the editorial, as it helps build the intuition and make it way more natural.
 
