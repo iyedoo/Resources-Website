@@ -1,7 +1,7 @@
 # The Dripping Tap
 *Written by Mina Ragy*
 
-## Problem Statement:
+## Problem Statement
 - [English](https://naoi2025.algerianoi.com/statements/dripping%20(en).pdf)
 - [Arabic](https://naoi2025.algerianoi.com/statements/dripping%20(ar_DZ).pdf)
 - [French](https://naoi2025.algerianoi.com/statements/dripping%20(fr).pdf)

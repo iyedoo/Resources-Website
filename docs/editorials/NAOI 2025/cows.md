@@ -3,6 +3,12 @@
 
 *By Sultan Alaiban*
 
+## Problem Statement
+- [English](https://naoi2025.algerianoi.com/statements/farm%20(en).pdf)
+- [Arabic](https://naoi2025.algerianoi.com/statements/farm%20(ar_DZ).pdf)
+- [French](https://naoi2025.algerianoi.com/statements/farm%20(fr).pdf)
+
+
 ## 1. Subtask 3 ($N,M ≤ 50, Q ≤ 20,000$)
 
 We can simply generate all of the squares. For each square, we will maintain the number of cows in it. For each update, we can go through all the squares and check if the given cell is in it. For each query, we can go through all the squares and get the maximum. This works since there at most $N + M$ squares. This can be done in $\mathcal{O}((N + M) \cdot Q)$
